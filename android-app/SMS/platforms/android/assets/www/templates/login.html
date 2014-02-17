@@ -1,0 +1,15 @@
+
+	<div id="login">
+        <form data-ng-submit="loginUser()">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Username" required ng-model="username"/>
+                <input type="password" class="form-control" placeholder="Password" required ng-model="password"/>
+
+                <button type="submit" data-ng-disabled="username==null || password==null" class="form-control btn btn-primary">Login</button>
+             
+            </div>
+            <span id="server"><a href="#">Set Server Address</a></span>
+            <span id="new"><a href="#register">I dont have an account yet.</a></span>
+            
+        </form>
+    </div>

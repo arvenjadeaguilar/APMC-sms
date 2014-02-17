@@ -1,0 +1,27 @@
+	<div id="newUser">	
+		<form class="form-horizontal" role="form" data-ng-submit="create()">
+            <div class="form-group">
+                <label for="inputName3" class="col-sm-2 control-label">Name</label>
+                <input type="text" class="form-control" id="item.name" required  placeholder="name" ng-model="item.name">
+            
+                <label for="inputUsername4" class="col-sm-2 control-label">Username</label>
+                <input type="text" class="form-control" id="item.username" required placeholder="Username" ng-model="item.username">
+           
+                <label for="inputUsername3" class="col-sm-2 control-label">Password</label>
+                <input type="password" class="form-control" id="item.password" required  placeholder="password" ng-model="item.password">
+           
+                <label for="inputUsername4" class="col-sm-2 control-label">Confirm password</label>
+                <input type="password" class="form-control" id="item.confirmPasword" required placeholder="confirm password" ng-model="item.confirmPassword">
+           
+                <label for="inputUsername4" class="col-sm-2 control-label">id no.</label>
+                <input type="text" class="form-control" id="item.id" data-ng-model="item.id" required placeholder="ID no">
+                
+                <label for="inputUsername4" class="col-sm-2 control-label">Contact no.</label>
+                <input type="text" class="form-control" id="item.contact" data-ng-model="item.contact" required placeholder="Contact No.">
+
+                <button type="submit" style="margin-top:2em; " data-ng-disabled="!(item.password==item.confirmPassword) || item.name==null || item.username == null || item.password == null || item.id==null || item.contact==null"  class="btn btn-primary form-control" >Register</button>
+                <a href="#login"><button type="button" id="cancel" class="btn btn-default form-control" >Cancel</button></a>
+
+            </div>
+           </form>
+     </div>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+
+    		body{
+
+    			background-color:black;
+    		}
+
+    		#login{
+    			margin-top: 50%;
+    			margin-left: 5%;
+    			margin-right: 5%;
+    		}
+
+    		#login input{
+    			margin-bottom: 0.5em;
+    		}
+            #newUser{
+                margin-top: 10%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+          
+    		
+    		#new{
+    			float: left;
+    			margin-top: 0.5em;
+           
+               
+    		}
+            #server{
+                float: left;
+                margin-top: 0.5em;
+           
+               
+            }
+            #serverForm{
+                margin-top: 50%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            #serverForm input{
+                margin-bottom: 0.5em;
+            }
+            #home{
+                color:white;
+            }
+            h4{
+                color: #0000A0;
+            }
+
+    </style>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app="smsApp">
+
+    <div class="container">
+		
+		
+		  	<div ng-view></div>
+		
+
+		
+
+    </div><!-- /.container -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    
+	<script src="app.js"></script>
+	<script type="text/javascript" src="js/login/loginController.js"></script>
+  </body>
+</html>
